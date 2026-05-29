@@ -1,11 +1,12 @@
+@import "./common.css";
 .container {
     width: 1596px;
     max-width: calc(100% - 160px);
     margin: 0 auto;
-    background-color: aqua;
+    color: #b3b3b3;
 }
 .btn {
-    padding: 1.4rem 3rem;
+    padding: 1.4rem 3.2rem;
     border-radius: 82px;
     border: none;
     font-weight: 400;
@@ -15,4 +16,180 @@
 }
 .btn__active {
     background-color: var(--primary-color);
+}
+.btn__inactive {
+    background-color: transparent;
+    color: #fff;
+}
+#header {
+    margin-top: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+#header .container {
+    padding: 20px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--background-component);
+}
+.header--logo {
+    width: 155px;
+    height: 40px;
+    object-fit: cover;
+}
+.navbars {
+    display: flex;
+    gap: 2.6rem;
+}
+.nav--item a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 82px;
+}
+
+.nav--item a:hover {
+    background-color: #262626;
+}
+.header--action {
+    display: flex;
+    gap: 30px;
+}
+
+#main .container {
+    margin-top: 53px;
+}
+.hero {
+    padding: 50px;
+    background-color: var(--background-component);
+    border-radius: 20px;
+
+    display: flex;
+    position: relative;
+}
+.hero--content {
+    position: absolute;
+    padding: 80px;
+    width: 631px;
+    height: auto;
+    z-index: 2;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--primary-background);
+}
+.hero__welcome {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fff;
+}
+.hero--title {
+    margin-bottom: 23px;
+    font-size: 5.8rem;
+    font-weight: 500;
+    line-height: 130%;
+    color: #fff;
+    code {
+        color: var(--primary-color);
+    }
+}
+.hero--desc {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 150%;
+}
+.hero-media,
+.hero--media__sr {
+    flex-shrink: 0;
+    margin-left: auto;
+    z-index: 1;
+    width: 968px;
+    height: 716px;
+    border-radius: 16px;
+}
+
+.hero__decore {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* Mission & Vision Section */
+.mission {
+    margin-top: 150px;
+}
+.mission--title {
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--primary-color);
+}
+.mission--desc {
+    width: 1296px;
+    margin-top: 14px;
+    margin-bottom: 80px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 150%;
+}
+.mission--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mission--media {
+    min-width: 664px;
+    height: 621px;
+    border-radius: 50px 50px 20px 20px;
+    background: url("../images/about-decore-1.png") no-repeat center / cover;
+    position: relative;
+}
+.mission--media__sr {
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    width: 544px;
+    height: 561px;
+    object-fit: cover;
+}
+.mission--content {
+    padding-left: 50px;
+    position: relative;
+    &::before {
+        position: absolute;
+        left: 0;
+        content: "";
+        height: 100%;
+        width: 2px;
+        background-color: var(--primary-color);
+    }
+}
+.mission--content__title {
+    font-size: 3.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: #fff;
+    margin-bottom: 14px;
+}
+.mission--content__desc {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 150%;
+}
+.mission--row + .mission--row {
+    flex-direction: row-reverse;
+    margin-top: -100px;
+    & .mission--content {
+        padding-right: 50px;
+        &::before {
+            position: absolute;
+            left: 100%;
+        }
+    }
 }

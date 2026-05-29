@@ -9,6 +9,22 @@
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/about.css" />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="../favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+        <link rel="shortcut icon" href="../favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="../favicon/site.webmanifest" />
     </head>
 
     <body>
@@ -16,23 +32,133 @@
         <header id="header">
             <div class="container">
                 <img src="../icons/Logo.png" alt="" class="header--logo" />
-            </div>
-            <nav class="header--navbar">
-                <ul class="navbars">
-                    <li class="nav--item"><a href="#">Home</a></li>
-                    <li class="nav--item"><a href="#">Careers</a></li>
-                    <li class="nav--item"><a href="#">About</a></li>
-                    <li class="nav--item"><a href="#">Security</a></li>
-                </ul>
-            </nav>
-            <div class="header--action">
-                <button class="btn btn__active">Sign Up</button>
-                <button class="btn btn__active">Login</button>
+                <nav class="header--navbar">
+                    <ul class="navbars">
+                        <li class="nav--item"><a href="#">Home</a></li>
+                        <li class="nav--item"><a href="#">Careers</a></li>
+                        <li class="nav--item"><a href="#">About</a></li>
+                        <li class="nav--item"><a href="#">Security</a></li>
+                    </ul>
+                </nav>
+                <div class="header--action">
+                    <button class="btn btn__inactive">Sign Up</button>
+                    <button class="btn btn__active">Login</button>
+                </div>
             </div>
         </header>
 
         <!-- Main -->
-        <main id="main"></main>
+        <main id="main" style="height: 2000px">
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero--content">
+                        <p class="hero__welcome">Welcome to YourBank</p>
+                        <h1 class="hero--title">
+                            Where Banking Meets <code>Excellence!</code>
+                        </h1>
+                        <p class="hero--desc">
+                            At YourBank, we believe that banking should be more
+                            than just transactions. It should be an experience
+                            that empowers individuals and businesses to thrive
+                            and reach their financial goals. As a trusted
+                            financial institution, we are committed to
+                            delivering exceptional banking services that go
+                            beyond expectations. With a focus on innovation,
+                            personalized solutions, and unwavering integrity, we
+                            strive to provide the best banking experience for
+                            our valued customers. Join us on this exciting
+                            journey and discover a new level of banking
+                            excellence.
+                        </p>
+                    </div>
+                    <figure class="hero-media">
+                        <img
+                            src="../images/about-hero.png"
+                            alt=""
+                            class="hero--media__sr"
+                        />
+                    </figure>
+                    <img
+                        src="../images/about-decore-hero.png"
+                        alt=""
+                        class="hero__decore"
+                    />
+                </section>
+
+                <!-- Mission Section -->
+                <section class="mission">
+                    <h2 class="mission--title">Mission & Vision</h2>
+                    <p class="mission--desc">
+                        We envision being a leading force in the industry,
+                        driven by innovation, integrity, and inclusivity,
+                        creating a brighter financial future for individuals and
+                        businesses while maintaining a strong commitment to
+                        customer satisfaction and community development
+                    </p>
+
+                    <!-- Mission -->
+                    <div class="mission--row">
+                        <figure class="mission--media">
+                            <img
+                                src="../images/about-mision.png"
+                                alt=""
+                                class="mission--media__sr"
+                            />
+                        </figure>
+                        <div class="mission--content">
+                            <h3 class="mission--content__title">Mission</h3>
+                            <p class="mission--content__desc">
+                                At YourBank, our mission is to empower our
+                                customers to achieve financial success. We are
+                                dedicated to delivering innovative banking
+                                solutions that cater to their unique needs.
+                                Through personalized services, expert guidance,
+                                and cutting-edge technology, we aim to build
+                                strong, lasting relationships with our
+                                customers. Our mission is to be their trusted
+                                partner, helping them navigate their financial
+                                journey and realize their dreams.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="mission--row">
+                        <figure class="mission--media">
+                            <img
+                                src="../images/about-vision.png"
+                                alt=""
+                                class="mission--media__sr"
+                            />
+                        </figure>
+                        <div class="mission--content">
+                            <h3 class="mission--content__title">Vision</h3>
+                            <p class="mission--content__desc">
+                                Our vision at YourBank is to redefine banking by
+                                creating a seamless and personalized experience
+                                for our customers. We envision a future where
+                                banking is accessible, transparent, and tailored
+                                to individual preferences. Through continuous
+                                innovation and collaboration, we strive to be at
+                                the forefront of the industry, setting new
+                                standards for customer-centric banking. Our
+                                vision is to be the preferred financial
+                                institution, known for our unwavering commitment
+                                to excellence, trust, and customer satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Release -->
+                <section class="release">
+                    <h2 class="release--title">Press Releases</h2>
+                    <p class="release--desc">
+                        Stay updated with the latest happenings and exciting developments at YourBank through our press releases.
+                    </p>
+            </div>
+        </main>
 
         <!-- Footer -->
         <footer id="footer"></footer>
