@@ -1,0 +1,318 @@
+/* Desktop — 1200px đến 1440px */
+@media (max-width: 1440px) and (min-width: 1200px) {
+    #header .container {
+        width: 1280px;
+        max-width: calc(100% - 120px);
+    }
+    .btn {
+        padding: 1.2rem 2.4rem;
+        font-size: 14px;
+    }
+    .header--logo {
+        width: 116px;
+        height: 30px;
+        object-fit: cover;
+    }
+    #header .container {
+        padding: 14px 24px;
+    }
+    .nav--item a {
+        font-size: 1.4rem;
+        padding: 10px 18px;
+    }
+    .hero--content {
+        padding: 60px;
+        width: calc(((658 - 120) / 1279) * 100%);
+        max-height: 100%;
+    }
+    .hero__welcome {
+        font-size: 1.8rem;
+    }
+    .hero--title {
+        margin-bottom: 20px;
+        font-size: clamp(3rem, 3.5vw, 4.8rem);
+    }
+    .hero--desc {
+        font-size: 1.8rem;
+        font-size: clamp(1.4rem, 1.6vw, 1.6rem);
+        font-weight: 300;
+        line-height: 150%;
+    }
+    .hero-media {
+        width: calc((715 / 1199) * 100%);
+        aspect-ratio: 715 / 568;
+    }
+    .hero--media__sr {
+        width: 100%;
+        aspect-ratio: 715 / 568;
+    }
+    .mission--title {
+        font-size: 3.8rem;
+    }
+    .mission--desc {
+        width: 1030px;
+        max-width: calc(100% - 160px);
+        margin-top: 10px;
+        margin-bottom: 60px;
+        font-size: 1.6rem;
+    }
+    .mission--media {
+        flex: 0 0 calc(100% * 545 / 1280);
+        aspect-ratio: 545 / 500;
+        background: url("../images/about-decore-1.png") no-repeat center / cover;
+        position: relative;
+    }
+    .mission--media__sr {
+        width: calc((425 / 545) * 100%);
+    }
+    .mission--content__title {
+        font-size: 3.2rem;
+        margin-bottom: 10px;
+    }
+    .mission--content__desc {
+        font-size: 1.6rem;
+    }
+    .mission--row + .mission--row {
+        margin-top: calc(-84 / 1440 * 100%);
+    }
+    .release {
+        margin: 120px 0px;
+    }
+    .release--title {
+        font-size: 3.8rem;
+    }
+    .release--desc {
+        margin-top: 10px;
+        margin-bottom: 60px;
+        font-size: 1.6rem;
+    }
+    .releases {
+        gap: 20px;
+    }
+    .release--item {
+        box-sizing: border-box;
+        width: calc((100% - 20px) / 2);
+        padding: 24px;
+        border-radius: 40px 40px 16px 16px;
+    }
+    .release--item__media {
+        width: 100%;
+        max-height: 277px;
+        border-radius: 30px 30px 12px 12px;
+        object-fit: cover;
+    }
+    .release--item__content {
+        padding: 0 24px;
+    }
+    .release--item__title {
+        margin-top: 40px;
+        font-size: 2rem;
+    }
+    .release--inffo {
+        margin-top: 14px;
+    }
+    .release--inffo__location,
+    .release--inffo__date {
+        font-size: 1.6rem;
+        padding: 6px 14px;
+    }
+    .release--item__desc {
+        margin-top: 24px;
+        font-size: 1.6rem;
+    }
+    #footer {
+        margin-bottom: 30px;
+    }
+    .footer--logo {
+        margin-bottom: 40px;
+    }
+    #footer .ooter--navbars {
+        gap: 14px;
+        a {
+            font-size: 1.6rem;
+        }
+    }
+    .contacts {
+        width: 1280px;
+        max-width: calc(100% - 120px);
+        padding: 40px 0px;
+        margin: 40px 0px;
+    }
+    address {
+        a {
+            font-size: 1.6rem;
+        }
+    }
+    svg {
+        width: 17.5px;
+        height: 13.75px;
+    }
+    .copyright {
+        padding: 12px 24px 12px 12px;
+        width: 1280;
+        max-width: calc(100% - 120px);
+    }
+    .footer-socials {
+        display: flex;
+        gap: 14px;
+
+        .social--item {
+            width: 44px;
+            height: 44px;
+            svg {
+                width: 20px;
+            }
+        }
+    }
+    .copyright--text {
+        font-size: 1.4rem;
+    }
+    .policy {
+        align-self: center;
+        a {
+            font-size: 1.4rem;
+        }
+        a + a {
+            margin-left: 16px;
+            &::before {
+                width: 1px;
+                height: 21px;
+                margin-left: -8px;
+            }
+        }
+    }
+}
+
+/* Large Desktop: 992px - 1200px */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .btn {
+        padding: 1.2rem 2.4rem;
+        font-size: 14px;
+    }
+    .header--logo {
+        width: 116px;
+        height: 30px;
+        object-fit: cover;
+    }
+    #header .container {
+        padding: 6px 16px;
+    }
+    .nav--item a {
+        font-size: 1.4rem;
+        padding: 10px 18px;
+    }
+    .hero--content {
+        padding: 60px;
+        width: 80%;
+        max-height: 75%;
+        background-color: rgba(26, 26, 26, 0.6);
+    }
+    .hero--desc {
+        color: #fff;
+    }
+    .mission {
+        margin-top: 100px;
+    }
+    .mission--title {
+        font-size: 3.6rem;
+    }
+    .mission--desc {
+        max-width: calc(100% - 80px);
+        width: 1030px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 1.4rem;
+    }
+    .mission--content__title {
+        font-size: 3.2rem;
+        margin-bottom: 10px;
+    }
+    .mission--content__desc {
+        font-size: 1.4rem;
+    }
+    .mission--row + .mission--row {
+        flex-direction: row-reverse;
+        margin-top: 20px;
+    }
+    .release {
+        margin: 100px 0px;
+    }
+    .release--title {
+        font-size: 3.6rem;
+    }
+    .release--desc {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 1.4rem;
+    }
+    .releases {
+        gap: 10px;
+    }
+    .release--item {
+        box-sizing: border-box;
+        width: calc((100% - 10px) / 2);
+        padding: 24px;
+        border-radius: 40px 40px 16px 16px;
+    }
+    .release--item__media {
+        width: 100%;
+        max-height: 277px;
+        border-radius: 30px 30px 12px 12px;
+    }
+    .release--item__content {
+        padding: 0 18px;
+    }
+    .release--item__title {
+        margin-top: 28px;
+        font-size: 1.8rem;
+    }
+    .release--inffo {
+        margin-top: 10px;
+    }
+    .release--inffo__location,
+    .release--inffo__date {
+        font-size: 1.4rem;
+        padding: 6px 14px;
+    }
+    .release--item__desc {
+        margin-top: 18px;
+        font-size: 1.4rem;
+    }
+    .contacts {
+        width: 1040px;
+        max-width: calc(100% - 80px);
+        padding: 40px 0px;
+        margin: 40px 0px;
+    }
+    address {
+        a {
+            font-size: 1.6rem;
+        }
+    }
+    svg {
+        width: 17.5px;
+        height: 13.75px;
+    }
+    address {
+        gap: 14px;
+        a {
+            font-size: 1.4rem;
+        }
+    }
+    svg {
+        margin-right: 1px;
+    }
+    .footer-socials {
+        .social--item {
+            width: 38px;
+            height: 38px;
+            svg {
+                width: 18px;
+            }
+        }
+    }
+}
+
+/* Mobile — dưới 768px */
+@media (max-width: 768px) {
+}
