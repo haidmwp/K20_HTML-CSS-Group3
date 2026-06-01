@@ -34,11 +34,44 @@
             <div class="container">
                 <img src="../icons/Logo.png" alt="" class="header--logo" />
                 <nav class="header--navbar">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="menu-toggle"
+                        style="display: none"
+                    />
+                    <!-- menu icon -->
+                    <div class="header__menu--icon">
+                        <label for="menu-toggle">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 17H19M5 12H19M5 7H19"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                        </label>
+                    </div>
+                    <!--  overlay  -->
+                    <label for="menu-toggle" class="overlay"></label>
+
                     <ul class="navbars">
                         <li class="nav--item"><a href="#">Home</a></li>
                         <li class="nav--item"><a href="#">Careers</a></li>
                         <li class="nav--item"><a href="#">About</a></li>
                         <li class="nav--item"><a href="#">Security</a></li>
+                        <li class="nav--item nav--mobile">
+                            <a href="#">Sign Up</a>
+                        </li>
+                        <li class="nav--item nav--mobile">
+                            <a href="#">Login</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="header--action">
@@ -346,9 +379,7 @@
                                 d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
                             />
                         </svg>
-                        <a href="mailto:hello@skillbirdge.com">
-                            hello@skillbirdge.com</a
-                        >
+                        hello@skillbirdge.com
                     </a>
                     <a href="#">
                         <svg
@@ -363,7 +394,7 @@
                                 clip-rule="evenodd"
                             />
                         </svg>
-                        <a href="tel:+9191813232309">+91 91813 23 2309</a>
+                        +91 91813 23 2309
                     </a>
 
                     <a href="#">
@@ -379,7 +410,7 @@
                                 clip-rule="evenodd"
                             />
                         </svg>
-                        <a href="#">Somewhere in the World</a>
+                        Somewhere in the World
                     </a>
                 </address>
             </div>
