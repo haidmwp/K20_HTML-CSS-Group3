@@ -374,9 +374,6 @@
         background-color: rgba(0, 0, 0, 0.4);
         z-index: 0;
     }
-}
-/* Tablet — từ 768px đến 992px */
-@media (max-width: 992px) and (min-width: 768px) {
     .hero {
         padding: 14px;
         display: flex;
@@ -414,6 +411,12 @@
         height: auto;
         border-radius: 16px;
     }
+    .release--item {
+        width: 100%;
+    }
+}
+/* Tablet — từ 768px đến 992px */
+@media (max-width: 992px) and (min-width: 768px) {
     .mission {
         margin-top: 70px;
     }
@@ -509,6 +512,278 @@
         .social--item {
             width: 24px;
             height: 24px;
+            svg {
+                width: 14px;
+            }
+        }
+    }
+    .copyright--text {
+        font-size: 1.4rem;
+    }
+    .policy {
+        a {
+            font-size: 1.4rem;
+        }
+    }
+}
+/* Mobile layout */
+@media (max-width: 767px) {
+    #header {
+        margin-top: 40px;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: calc(100% - 32px);
+    }
+    #header .container {
+        box-sizing: border-box;
+    }
+
+    #menu-toggle:checked ~ .navbars {
+        &::before {
+            top: -9px;
+            right: 55px;
+        }
+    }
+    .hero {
+        padding: 0px;
+    }
+    .hero-media {
+        width: calc(100% - 24px);
+        margin: 0 auto;
+        border-radius: 16px;
+    }
+    .hero--media__sr {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+    #main .hero--content {
+        padding: 24px;
+        margin-top: -90px;
+    }
+    .hero--desc {
+        width: 100%;
+    }
+    .mission {
+        margin-top: 80px;
+    }
+    .mission--title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .mission--desc {
+        text-align: center;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .mission--row,
+    .mission--row + .mission--row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .mission--row + .mission--row {
+        margin-top: 40px;
+        & .mission--content {
+            padding: 0px 40px;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .mission--media {
+        padding: 20px 20px 0px 20px;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        box-sizing: border-box;
+        position: relative;
+        &::before {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            content: "";
+            height: 2px;
+            width: 100%;
+            z-index: 2;
+            background-color: var(--primary-color);
+        }
+    }
+    .mission--media__sr {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        /* margin: 0; */
+        box-sizing: border-box;
+    }
+    .mission--content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 40px;
+        &::before {
+            display: none;
+        }
+    }
+    .mission--content__title {
+        margin: 30px 0px 10px 0px;
+    }
+    .mission--content__desc {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .release {
+        margin: 30px 0px;
+    }
+    .release--desc {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .releases {
+        gap: 20px;
+    }
+    .release--title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .release--desc {
+        font-size: 1.4rem;
+    }
+    .release--item {
+        width: 100%;
+        padding: 20px;
+    }
+    .release--item__title {
+        font-size: 1.8rem;
+        margin-top: 30px;
+    }
+    .release--inffo__location,
+    .release--inffo__date {
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
+    .release--item__desc {
+        margin-top: 24px;
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    address {
+        flex-wrap: wrap;
+        /* a {
+            font-size: 1.4rem;
+        } */
+    }
+    .copyright {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 28px;
+    }
+    .footer-socials {
+        .social--item {
+            width: 24px;
+            height: 24px;
+            svg {
+                width: 14px;
+            }
+        }
+    }
+}
+/* Only Mobile */
+@media (max-width: 576px) {
+    .hero__welcome {
+        font-size: 1.4rem;
+    }
+    .hero--title {
+        font-size: 2.8rem;
+    }
+    .hero--desc {
+        font-size: 1.4rem;
+    }
+    .mission {
+        margin-top: 56px;
+    }
+    .mission--title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .mission--desc {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .mission--row,
+    .mission--row + .mission--row {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .mission--media {
+        padding: 20px 20px 0px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        position: relative;
+        &::before {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            content: "";
+            height: 2px;
+            width: 100%;
+            z-index: 2;
+            background-color: var(--primary-color);
+        }
+    }
+    .mission--media__sr {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        /* margin: 0; */
+        box-sizing: border-box;
+    }
+    .mission--content {
+        padding: 0;
+    }
+    .mission--row + .mission--row .mission--content {
+        padding: 0;
+    }
+    .mission--content__title {
+        margin: 30px 0px 10px 0px;
+        font-size: 2.6rem;
+    }
+    .mission--content__desc {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    /* Footer */
+    .copyright {
+        position: relative;
+        flex-direction: column;
+        padding-top: 42px;
+        gap: 14px;
+    }
+    .footer-socials {
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+        .social--item {
+            width: 44px;
+            height: 44px;
             svg {
                 width: 14px;
             }
