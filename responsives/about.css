@@ -223,6 +223,14 @@
         margin-bottom: 50px;
         font-size: 1.4rem;
     }
+    .mission--media {
+        flex: 0 0 calc((100% - 20px) * 664 / 1596);
+        display: flex;
+        justify-content: center;
+    }
+    .mission--media__sr {
+        left: unset;
+    }
     .mission--content__title {
         font-size: 3.2rem;
         margin-bottom: 10px;
@@ -415,6 +423,7 @@
         width: 100%;
     }
 }
+
 /* Tablet — từ 768px đến 992px */
 @media (max-width: 992px) and (min-width: 768px) {
     .mission {
@@ -446,6 +455,7 @@
         }
     }
     .mission--media {
+        flex: 0 0 calc((100% - 20px) * 664 / 1596);
         position: relative;
         display: flex;
         justify-content: center;
@@ -618,7 +628,6 @@
         left: 0;
         width: 100%;
         height: auto;
-        /* margin: 0; */
         box-sizing: border-box;
     }
     .mission--content {
@@ -751,7 +760,6 @@
         left: 0;
         width: 100%;
         height: auto;
-        /* margin: 0; */
         box-sizing: border-box;
     }
     .mission--content {
@@ -768,7 +776,11 @@
         text-align: center;
         margin-bottom: 50px;
     }
-
+    address {
+        a {
+            font-size: 1.4rem;
+        }
+    }
     /* Footer */
     .copyright {
         position: relative;

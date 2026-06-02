@@ -174,7 +174,7 @@
     align-items: center;
 }
 .mission--media {
-    /* flex: 0 0 calc((100% - 30px) * 664 / 1596); */
+    flex: 0 0 calc((100% - 30px) * 664 / 1596);
     aspect-ratio: 664 / 621;
     border-radius: 50px 50px 20px 20px;
     background: url("../images/about-decore-1.png") no-repeat center / cover;
