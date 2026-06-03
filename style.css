@@ -1,3 +1,7 @@
+:root {
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
 }
 
 body {
-    
+    font-family: "Lexend", sans-serif;
 }
 
 .navbar {
@@ -44,6 +48,8 @@ body {
 
     width: 363px;
     height: 51px;
+
+    user-select: none;
 }
 
 .navbar__list li {
@@ -58,9 +64,8 @@ body {
 
 .navbar__list a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 
-    font-family: "Lexend", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -77,5 +82,36 @@ body {
 
     background-color: #262626;
 
+    border-radius: 82px;
+}
+
+.navbar__actions {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar__link {
+    text-decoration: none;
+
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.navbar__link--signup {
+    display: flex;
+    align-items: center;
+    color: #fff
+}
+
+.navbar__link--login {
+    color: #1c1c1c;
+    background-color: #caff33;
+    padding: 14px 30px;
     border-radius: 82px;
 }
