@@ -11,3 +11,9 @@ git add .
 git commit -m "..."
 git push origin feature/security-page
 - Push xong se vao github de tao Compare & pull request cho anh Minh xem code.
+
+
+----------<> Note <>----------
+[5-6] 
+- Xong section Security
+- LOI: Kiem tra lai background sau 4 card
