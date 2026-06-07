@@ -15,6 +15,7 @@
 body {
   background-color: var(--background-body);
   font-family: "Lexend", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -156,6 +157,9 @@ body {
 }
 
 .hero__content .hero__title {
+  width: 631px;
+  height: 150px;
+
   font-family: Lexend;
   font-weight: 500;
   font-style: Medium;
@@ -169,6 +173,9 @@ body {
 }
 
 .hero__content .hero__desc {
+  width: 631px;
+  height: 108px;
+
   font-family: Lexend;
   font-weight: 300;
   font-style: Light;
@@ -448,7 +455,6 @@ body {
 
   width: 100%;
   max-width: 1595px;
-  /* height: 697px; */
 }
 
 .faq__card {
@@ -742,84 +748,357 @@ body {
 }
 
 @media (max-width: 1440px) {
-   .navbar {
-    width: 1280px;
-    height: 73px;
-    top: 30px;
-    left: 80px;
-    justify-content: space-between;
-    padding-top: 14px;
+  .navbar {
+  width: 1280px;
+  height: 73px;
+  top: 30px;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  border-radius: 100px;
+  border-width: 1px;
+  }
+
+  .navbar__logo {
+  font-size: 20px;
+  width: 116.87499237060547px;
+  height: 30px;
+  }
+
+  .navbar__list {
+  width: 306px;
+  height: 41px;
+  }
+
+  .navbar__list a {
+    font-family: Lexend;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+  }
+
+  .navbar__list li:hover {
+    padding: 10px 18px;
+  }
+
+  .navbar__actions {
+    gap: 20px;
+    width: 161px;
+    height: 45px;
+  }
+
+  .navbar__link--login {
+    width: 87px;
+    height: 45px;
+    padding-top: 12px;
     padding-right: 24px;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
     padding-left: 24px;
-    border-radius: 100px;
-    border-width: 1px;
-   }
+    gap: 10px;
+  }
 
-   .navbar__logo {
-    font-size: 20px;
-    width: 116.87499237060547px;
+  .navbar__link {
+    font-family: Lexend;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+  }
+
+  .hero__container {
+    width: 100%; 
+    max-width: 1279px;
+    height: 648px;
+
+    padding: 40px;
+  }
+
+  .hero__content {
+    width: 658px;
+    height: 384px;
+    padding: 60px;
+    gap: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .hero__content .hero__title {
+    width: 538px;
+    height: 124px;
+    font-size: 48px;
+  }
+
+  .hero__content .hero__desc {
+    width: 538px;
+    height: 120px;
+    font-size: 16px;
+  }
+
+  .hero__image img {
+    width: 715px;
+    height: 568px;
+    border-radius: 16px;
+  }
+
+  .hero__abstract-design img {
+    width: 334px;
+    height: 317px;
+  }
+
+  .protection__container {
+    width: 100%;
+    max-width: 1280px;
+    height: 847px;
+  }
+
+  .protection__header {
+    width: 1280px;
+    height: 115px;
+    padding-right: 250px;
+    gap: 10px;
+  }
+
+  .protection__header h2 {
+    width: 1030px;
+    height: 57px;
+    font-size: 38px;
+  }
+
+  .protection__header p {
+    width: 1030px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .protection__list {
+    width: 100%;  
+    max-width: 1280px;
+    height: 612px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+    padding: 0 80px;
+  }
+
+  .protection__card {
+    width: 550px;
+    height: 296px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px;
+    gap: 20px;
+
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+
+    background:
+      linear-gradient(
+        267.5deg,
+        #1c1c1c 40.67%,
+        rgba(28, 28, 28, 0) 99.81%
+      ),
+      linear-gradient(
+        106.06deg,
+        rgba(202, 255, 51, 0.05) -29.45%,
+        rgba(202, 255, 51, 0) 27.86%
+      );
+  }
+
+  .protection__card-header {
+    display: flex;
+    align-items: center;
+
+    width: 470px;
+    height: 76px;
+
+    gap: 14px;
+
+    color: #fff;
+  }
+
+  .protection__icon {
+    position: relative;
+
+    width: 76px;
+    height: 76px;
+
+    border-radius: 70px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    background: linear-gradient(
+      180deg,
+      rgba(202, 255, 51, 0.1) -66.22%,
+      rgba(202, 255, 51, 0) 85.46%
+    );
+  }
+
+  .protection__icon::before {
+    width: 76px;
+    height: 76px;
+
+    border-radius: 70px;
+
+    padding: 8px;
+
+    background: linear-gradient(
+      180deg,
+      rgba(202, 255, 51, 0.05) 0%,
+      rgba(202, 255, 51, 0) 100%
+    );
+  }
+
+  .protection__icon::after {
+    width: 57px;
+    height: 57px;
+
+    padding: 16px;
+
+    background: linear-gradient(
+      180deg,
+      rgba(202, 255, 51, 0.1) -66.22%,
+      rgba(202, 255, 51, 0) 85.46%
+    );
+
+    border: 1px solid;
+
+    border-image-source: linear-gradient(
+      180deg,
+      rgba(202, 255, 51, 0.2) -173.65%,
+      rgba(202, 255, 51, 0) 87.22%
+    );
+  }
+
+  .protection__icon img {
+    width: 22px;
+    height: 22px;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .protection__card-header h3 {
+    width: 380px;
     height: 30px;
-   }
 
-   .navbar__list {
-    width: 306px;
-    height: 41px;
-   }
+    font-family: Lexend;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+  }
 
-    .navbar__list a {
-      font-family: Lexend;
-      font-weight: 400;
-      font-style: Regular;
-      font-size: 14px;
-    }
+  .protection__card p {
+    width: 470px;
+    height: 120px;
 
-    .navbar__list li:hover {
-      padding: 10px 18px;
-    }
+    font-family: Lexend;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
 
-    .navbar__actions {
-      gap: 20px;
-      width: 161px;
-      height: 45px;
-    }
+    color: var(--color-desc);
+  }
 
-    .navbar__link--login {
-      width: 87px;
-      height: 45px;
-      padding-top: 12px;
-      padding-right: 24px;
-      padding-bottom: 12px;
-      padding-left: 24px;
-      gap: 10px;
-    }
+  .faq-container {
+    width: 100%;
+    max-width: 1280px;
+    height: 953px;
+    margin: 220px auto;
+    gap: 60px;
+  }
 
-    .navbar__link {
-      font-family: Lexend;
-      font-weight: 400;
-      font-style: Regular;
-      font-size: 14px;
-    }
+  .faq-container__header {
+    width: 100%;  
+    max-width: 1279px;
+    height: 91px;
+    gap: 10px;
+    padding-right: 300px;
+  }
 
-    .hero__container {
-      width: 100%; 
-      max-width: 1279px;
-      height: 648px;
-      top: 153px;
-      left: 81px;
+  .faq-container__header .faq-title {
+    width: 100%;
+    max-width: 1280px;
+    height: 57px;
 
-      border-radius: 20px;
-      padding: 40px;
-    }
+    font-family: Lexend;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 150%;
+    color: #fff;
+  }
 
-    .hero__content {
-      width: 658px;
-      height: 384px;
-      padding: 60px;
-      gap: 20px;
-      border-top-left-radius: 20px;
-      border-bottom-right-radius: 60px;
-      border-bottom-left-radius: 20px;
+  .faq-container__header .faq-desc {
+    width: 100%;
+    max-width: 979px;
+    height: 24px;
+    font-size: 16px;
+  }
 
-    }
+  .faq-container__list {
+    width: 100%;
+    max-width: 1279px;
+    height: 659px;
+    gap: 20px;
+  }
+
+  .faq__card {
+    flex-basis: calc((100% - 20px) / 2);
+    height: 295px;
+    border-radius: 10px;
+    padding: 40px;
+  }
+
+  .faq__card-header h3 {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+  .faq__card-desc p {
+    font-size: 16px;
+  }
+
+  .faq__load-all {
+    top: -58px;
+    width: 155px;
+    height: 49px;
+
+    padding: 14px 20px;
+
+    border-radius: 100px;
+  }
+
+  .faq__load-all::before {
+    top: -151px;
+    width: 1279px;
+    height: 295px;
+  }
+
+  .faq__load-all p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+
+  .icon-chevron-down {
+    width: 18px;
+    height: 18px;
+  }
 }
