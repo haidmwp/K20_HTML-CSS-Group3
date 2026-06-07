@@ -800,4 +800,26 @@ body {
       font-style: Regular;
       font-size: 14px;
     }
+
+    .hero__container {
+      width: 100%; 
+      max-width: 1279px;
+      height: 648px;
+      top: 153px;
+      left: 81px;
+
+      border-radius: 20px;
+      padding: 40px;
+    }
+
+    .hero__content {
+      width: 658px;
+      height: 384px;
+      padding: 60px;
+      gap: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 20px;
+
+    }
 }
