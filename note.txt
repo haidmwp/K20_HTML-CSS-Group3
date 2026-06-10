@@ -1,0 +1,19 @@
+------------* Tai nguyen *------------
+- Video huong dan: https://www.youtube.com/watch?v=pqaUPOfsepY
+- Figma: https://www.figma.com/design/SaNZJvyd5HTXtu4MjTiNyh/HTML-CSS-UI-Kit-2?node-id=4-8031&p=f
+
+- Bo cuc semantic: https://www.webyes.com/wp-content/uploads/2024/10/semantic-html-enhances-accessibility-1-1024x536.jpeg
+
+------------= Github =------------
+- Dang code o nhanh: feature/security-page
+- Sau khi code xong:
+git add .
+git commit -m "..."
+git push origin feature/security-page
+- Push xong se vao github de tao Compare & pull request cho anh Minh xem code.
+
+
+----------<> Note <>----------
+[5-6] 
+- Xong section Security
+- LOI: Kiem tra lai background sau 4 card
