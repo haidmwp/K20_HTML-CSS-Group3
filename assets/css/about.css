@@ -1,4 +1,9 @@
 @import "./common.css";
+
+body {
+    font-family: "Lexend", sans-serif;
+}
+
 .container {
     width: 1596px;
     max-width: calc(100% - 160px);
@@ -28,10 +33,12 @@
     z-index: 100;
 }
 #header .container {
+    width: 1596px;
     padding: 20px 34px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     border-radius: 100px;
     background-color: var(--background-component);
 }
@@ -45,7 +52,12 @@
     gap: 2.6rem;
 }
 .nav--item a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 93px;
+    height: 51px;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 400;
@@ -55,6 +67,10 @@
 }
 
 .nav--item a:hover {
+    background-color: #262626;
+}
+
+.nav--item a.active {
     background-color: #262626;
 }
 .header--action {
@@ -304,7 +320,7 @@
 .footer--logo {
     margin-bottom: 50px;
 }
-#footer .ooter--navbars {
+#footer .footer--navbars {
     display: flex;
     gap: 26px;
     a {

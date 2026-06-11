@@ -126,7 +126,7 @@
     .footer--logo {
         margin-bottom: 40px;
     }
-    #footer .ooter--navbars {
+    #footer .footer--navbars {
         gap: 14px;
         a {
             font-size: 1.6rem;
@@ -352,7 +352,7 @@
             content: "";
             position: absolute;
             top: -9px;
-            right: 100px;
+            right: 117px;
             width: 0;
             height: 0;
             border-left: 10px solid transparent;
@@ -782,7 +782,11 @@
         }
     }
     /* Footer */
-    .copyright {
+    #footer .footer--navbars {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer .copyright {
         position: relative;
         flex-direction: column;
         padding-top: 42px;
