@@ -20,9 +20,11 @@ body {
     color: #1c1c1c;
 }
 .btn__active {
+    width: 109px;
     background-color: var(--primary-color);
 }
 .btn__inactive {
+    padding-right: 0px;
     background-color: transparent;
     color: #fff;
 }
@@ -40,6 +42,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     border-radius: 100px;
+    border: 1px solid #262626;
     background-color: var(--background-component);
 }
 .header--logo {
