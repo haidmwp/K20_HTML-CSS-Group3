@@ -24,6 +24,7 @@ body {
     background-color: var(--primary-color);
 }
 .btn__inactive {
+    margin-right: 0px;
     padding-right: 0px;
     background-color: transparent;
     color: #fff;
@@ -36,7 +37,7 @@ body {
 }
 #header .container {
     width: 1596px;
-    padding: 20px 34px;
+    padding: 20px 34px 20px 37px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,21 +60,24 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    min-width: 93px;
+    border-radius: 82px;
     height: 51px;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 400;
     text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 82px;
+    transition: padding 0.2s;
 }
 
 .nav--item a:hover {
+    padding: 12px 20px;
     background-color: #262626;
 }
 
 .nav--item a.active {
+    padding: 12px 20px;
+
+    min-width: 93px;
     background-color: #262626;
 }
 .header--action {
