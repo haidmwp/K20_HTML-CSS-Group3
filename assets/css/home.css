@@ -2216,3 +2216,19 @@ a:active {
     height: 20px;
   }
 }
+
+@media (min-resolution: 1.25dppx) {
+  .container {
+    width: 1280px;
+    max-width: 100%;
+  }
+
+  .welcome-content-wrapper .img-arrow {
+    right: -125px;
+  }
+
+  .journey-content-left {
+    width: 900px;
+    max-width: 100%;
+  }
+}
