@@ -1204,6 +1204,22 @@ a:active {
 }
 /*-- emd site footer content css --*/
 
+@media (min-resolution: 1.25dppx) {
+  .container {
+    width: 1280px;
+    max-width: 100%;
+  }
+
+  .welcome-content-wrapper .img-arrow {
+    right: -125px;
+  }
+
+  .journey-content-left {
+    width: 900px;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   html, body {
     font-size: 14px;
@@ -2214,21 +2230,5 @@ a:active {
   .icon-footer-social {
     width: 20px;
     height: 20px;
-  }
-}
-
-@media (min-resolution: 1.25dppx) {
-  .container {
-    width: 1280px;
-    max-width: 100%;
-  }
-
-  .welcome-content-wrapper .img-arrow {
-    right: -125px;
-  }
-
-  .journey-content-left {
-    width: 900px;
-    max-width: 100%;
   }
 }
